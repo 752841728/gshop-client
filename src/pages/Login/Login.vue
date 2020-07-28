@@ -78,7 +78,7 @@ export default {
       name: "", // 登录用户名
       pwd: "", // 登录密码
       alertText: "", // 提示文本
-      alertShow: false // 是否显示警告框
+      alertShow: false, // 是否显示警告框
     };
   },
 
@@ -106,14 +106,14 @@ export default {
       let params = {
         username: this.username,
         password: this.password,
-        balance: 1000
+        balance: 1000,
       };
       Bmob.User.register(params)
-        .then(res => {
+        .then((res) => {
           this.showAlert("注册成功");
           NProgress.done();
         })
-        .catch(err => {
+        .catch((err) => {
           if (err.code == "202") {
             this.showAlert("用户名已存在");
           } else {
@@ -134,7 +134,7 @@ export default {
       }
       NProgress.start();
       Bmob.User.login(this.name, this.pwd)
-        .then(res => {
+        .then((res) => {
           const username = res.username;
           const objectId = res.objectId;
           const balance = res.balance;
@@ -144,7 +144,7 @@ export default {
           this.$router.replace("/profile");
           NProgress.done();
         })
-        .catch(err => {
+        .catch((err) => {
           if (err.code == "101") {
             this.showAlert("用户名或者密码错误");
           }
@@ -199,12 +199,12 @@ export default {
     closeTip() {
       this.alertShow = false;
       this.alertText = "";
-    }
+    },
   },
 
   components: {
-    AlertTip
-  }
+    AlertTip,
+  },
 };
 </script>
 
