@@ -1,4 +1,17 @@
-# day01
+## 0. 项目效果
+![image](https://github.com/752841728/gshop-client/blob/master/images/1.png)
+![image](https://github.com/752841728/gshop-client/blob/master/images/2.png)
+----------------------------------------------------------------------------
+![image](https://github.com/752841728/gshop-client/blob/master/images/3.png)
+![image](https://github.com/752841728/gshop-client/blob/master/images/4.png)
+----------------------------------------------------------------------------
+![image](https://github.com/752841728/gshop-client/blob/master/images/5.png)
+![image](https://github.com/752841728/gshop-client/blob/master/images/6.png)
+----------------------------------------------------------------------------
+![image](https://github.com/752841728/gshop-client/blob/master/images/7.png)
+![image](https://github.com/752841728/gshop-client/blob/master/images/8.png)
+----------------------------------------------------------------------------
+![image](https://github.com/752841728/gshop-client/blob/master/images/9.png)
 ## 1. 项目开发准备
     项目描述
     技术选型
@@ -12,7 +25,7 @@
     生产环境打包与发布
 
 ## 3. 搭建项目整体界面结构
-    stylus的理解和使用
+    less的理解和使用
         结构化, 变量, 函数/minxin(混合)
     vue-router的理解和使用
         router-view/router-link/keep-alive
@@ -39,10 +52,8 @@
     ajax请求库: axios
     ajax请求函数封装: axios + promise
     接口请求函数封装: 每个后台接口
-
-
-# day02
-## 1. 异步数据
+    
+## 8. 异步数据
     封装ajax: 
         promise+axios封装ajax请求的函数
         封装每个接口对应的请求函数(能根据接口定义ajax请求函数)
@@ -71,14 +82,14 @@
             1). 使用回调+$nextTick()
             2). 使用watch+$nextTick()	
     		
-## 2. 登陆/注册: 界面相关效果
+## 9. 登陆/注册: 界面相关效果
     a. 切换登陆方式
     b. 手机号合法检查
     c. 倒计时效果
     d. 切换显示或隐藏密码
     g. 前台验证提示
     
-## 3. 前后台交互相关问题
+## 10. 前后台交互相关问题
     1). 如何查看你的应用是否发送某个ajax请求?  
         浏览器的network
     2). 发ajax请求404
@@ -89,8 +100,7 @@
         vuex中是否有
         组件中是否读取
         
-# day03
-## 1. 完成登陆/注册功能
+## 11. 完成登陆/注册功能
     1). 2种方式
        手机号/短信验证码登陆
        用户名/密码/图片验证码登陆
@@ -109,16 +119,11 @@
        使用debugger语句调试代码
        实参类型与形参类型的匹配问题
        
-## 2. 搭建商家整体界面
+## 12. 搭建商家整体界面
     1). 拆分界面路由
     2). 路由的定义/配置|使用
-
-## 3. 模拟(mock)数据/接口
-    1). 前后台分离的理解
-    2). mockjs的理解和使用
-    3). jons数据设计的理解
      
-## 4. ShopHeader组件
+## 13. ShopHeader组件
     1). 异步显示数据效果的编码流程
         ajax
           ajax请求函数
@@ -141,8 +146,7 @@
      
     3). vue transition动画
     
-# day04
-## 1. ShopGoods组件
+## 14. ShopGoods组件
     1). 动态展现列表数据
     2). 基本滑动:
         使用better-scroll
@@ -170,37 +174,36 @@
             3. 实现currentIndex的计算逻辑
     4). 点击左侧列表项, 右侧滑动到对应位置
     
-## 2. CartControl组件
+## 15. CartControl组件
     1). 问题: 更新状态数据, 对应的界面不变化
         原因: 一般方法给一个已有绑定的对象中添加一个新的属性, 这个属性没有数据绑定
         解决: 
             Vue.set(obj, 'xxx', value)才有数据绑定
             this.$set(obj, 'xxx', value)才有数据绑定
             
-## 3. ShopCart组件
+## 16. ShopCart组件
     1). 使用vuex管理购物项数据: cartFoods
     2). 解决几个功能性bug
 
-## 4. Food组件
+## 17. Food组件
     1). 父子组件:
         子组件调用父组件的方法: 通过props将方法传递给子组件
         父组件调用子组件的方法: 通过ref找到子组件标签对象
 
-# day05
-## 1. ShopRatings组件
+## 18. ShopRatings组件
     1). 列表的过滤显示
     2). 自定义过滤器
     
-## 2. ShopInfo组件
+## 19. ShopInfo组件
     1). 使用better-scroll实现两个方向的滑动
     1). 通过JS动态操作样式
     2). 解决当前路由刷新异常的bug
     
-## 3. Search组件
+## 20. Search组件
     1). 根据关键字来异步搜索显示匹配的商家列表
     2). 如实实现没有搜索结果的提示显示
 
-## 4. 项目优化
+## 21. 项目优化
     1). 缓存路由组件对象
     2). 路由组件懒加载
     3). 图片司加载: vue-lazyload
