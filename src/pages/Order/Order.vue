@@ -15,14 +15,15 @@
               <div class="order_body clearfix" v-for="(food,index) in cart.cartFood" :key="index">
                 <div class="order_body_shop">{{food.name}}</div>
                 <div class="order_body_num">×{{food.count}}</div>
-                <div class="order_body_tot">{{food.price}}元</div>
+                <div class="order_body_tot">￥{{food.price}}</div>
               </div>
               <div class="order_footer clearfix">
                 <div class="order_footer_date">{{cart.createdAt}}</div>
-                <div class="order_footer_total">{{cart.totalPrice}}元</div>
+                <div class="order_footer_total">合计{{cart.totalPrice}}</div>
               </div>
             </div>
           </div>
+          <div class="order-bottom">到底了~</div>
         </div>
       </div>
     </section>
@@ -38,11 +39,11 @@ export default {
     return {
       carts: [],
       scroll: null,
-      username: window.sessionStorage.getItem("username")
+      username: window.sessionStorage.getItem("username"),
     };
   },
   components: {
-    HeaderTop
+    HeaderTop,
   },
   mounted() {
     const { username } = this;
@@ -50,13 +51,13 @@ export default {
     const query1 = query.equalTo("userInfo", "==", username);
     // const query1 = query.equalTo("userInfo", "==", "abc");
     query.or(query1);
-    query.find().then(res => {
+    query.find().then((res) => {
       this.carts = res;
     });
     new BScroll(".wrapper", {
-      click: true
+      click: true,
     });
-  }
+  },
 };
 </script>
 
@@ -160,60 +161,73 @@ export default {
   }
 
   .order_in_login {
-    padding-top: 45px;
-    margin-bottom: 60px;
+    padding-top: 55px;
+    background-color: #eee;
 
     .wrapper {
       height: 525px;
     }
 
     .order_list {
-      border: 1px solid #eee;
+      border: 1px solid rgb(0, 141, 225);
       border-radius: 4px;
-      background-color: #eee;
+      background-color: #fff;
       margin: 10px 10px;
+
+      .order_item {
+        padding: 10px;
+
+        .order_header {
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          margin-bottom: 10px;
+          color: rgb(0, 141, 225);
+          font-weight: 600;
+        }
+
+        .order_body {
+          padding: 10px 0;
+
+          .order_body_shop {
+            float: left;
+          }
+
+          .order_body_num {
+            float: left;
+            color: #778899;
+            font-size: 14px;
+            padding-left: 10px;
+          }
+
+          .order_body_tot {
+            float: right;
+          }
+        }
+
+        .order_footer {
+          padding: 10px 0;
+          margin-top: 10px;
+
+          .order_footer_date {
+            float: left;
+            font-size: 12px;
+          }
+
+          .order_footer_total {
+            float: right;
+          }
+        }
+      }
     }
 
-    .order_item {
-      padding: 10px;
-
-      .order_header {
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      .order_body {
-        padding: 10px 0;
-
-        .order_body_shop {
-          float: left;
-        }
-
-        .order_body_num {
-          float: left;
-          font-size: 14px;
-          padding-left: 10px;
-        }
-
-        .order_body_tot {
-          float: right;
-        }
-      }
-
-      .order_footer {
-        padding: 10px 0;
-        margin-top: 10px;
-
-        .order_footer_date {
-          float: left;
-        }
-
-        .order_footer_total {
-          float: right;
-        }
-      }
+    .order-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      color: #778899;
+      padding-bottom: 10px;
     }
   }
 }
