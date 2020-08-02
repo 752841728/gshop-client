@@ -46,8 +46,8 @@
               </section>
             </section>
           </div>
-          <button class="login_submit" v-show="loginWay" @click="logon">注册</button>
-          <button class="login_submit" v-show="!loginWay" @click="login">登录</button>
+          <div class="login_submit" v-show="loginWay" @click="logon">注册</div>
+          <div class="login_submit" v-show="!loginWay" @click="login">登录</div>
         </form>
         <a href="javascript:;" class="about_us">关于我们</a>
       </div>
