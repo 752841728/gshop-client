@@ -25,8 +25,8 @@
 ## 项目图片 ##
 
 > 注册登录
-> ![image](https://github.com/752841728/gshop-client/blob/master/images/01.png)
-> ![image](https://github.com/752841728/gshop-client/blob/master/images/02.png)
+<img height="150" src="https://github.com/752841728/gshop-client/blob/master/images/01.png"/>
+<img height="150" src="https://github.com/752841728/gshop-client/blob/master/images/02.png"/>
 > 个人中心
 > ![image](https://github.com/752841728/gshop-client/blob/master/images/03.png)
 > 商家页面
