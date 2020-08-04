@@ -25,19 +25,19 @@
 ## 项目图片 ##
 
 > 注册登录
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/01.png"/>
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/02.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/01.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/02.png"/>
 > 个人中心
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/03.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/03.png"/>
 > 商家页面
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/08.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/08.png"/>
 > 搜索商家
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/09.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/09.png"/>
 > 商品页面
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/06.png"/>
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/04.png"/>
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/05.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/06.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/04.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/05.png"/>
 > 提交订单
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/11.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/11.png"/>
 > 查看订单
-<img height="300" src="https://github.com/752841728/gshop-client/blob/master/images/10.png"/>
+> <img height="500" src="https://github.com/752841728/gshop-client/blob/master/images/10.png"/>
